@@ -1,0 +1,29 @@
+:root {
+  --light-gray: #555;
+  --dark-gray: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  color: var(--light-gray);
+  font-family: sans-serif;
+  font-size: 18px;
+}
+
+main {
+  margin: 3rem auto;
+  max-width: 90vw;
+  width: 54ch;
+}
+
+h1 {
+  color: var(--dark-gray);
+  font-size: 2rem;
+  margin: 0 0 1.5rem;
+}
