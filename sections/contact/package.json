@@ -4,6 +4,7 @@
   "description": "",
   "main": "gatsby-node.js",
   "dependencies": {
+    "@types/mailgun-js": "^0.22.11",
     "dotenv": "^8.2.0",
     "form-data": "^4.0.0",
     "gatsby": "^3.0.2",

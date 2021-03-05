@@ -12,14 +12,20 @@ const Form = () => {
 
   const handleSubmit = async (event) => {
     event.preventDefault()
-    setStatus('SENDING')
-    const response = await fetch('/api/contact', {
-      method: 'POST',
-      body: JSON.stringify(state),
-    })
 
-    const sum = await response.json()
-    console.log(sum)
+    setStatus('SENDING')
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        body: JSON.stringify(state),
+      })
+
+      if (response) {
+        setStatus('SENT')
+      }
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
