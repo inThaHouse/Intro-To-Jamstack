@@ -32,4 +32,10 @@ This repo hosts code/notes taken from the course https://frontendmasters.com/cou
 - Format for a serverless functions is we have to name the variable handler.
 - After booting your app, you can test your serverless functions on path `/.netlify/functions/${fileInFolder}` (or the alias you put in the netlify config file)
 - Cloud is basically other peoples computer.
-</details>
+- Notes on mailgun
+  1. Mailgun released their own official npm package. https://www.npmjs.com/package/mailgun.js
+  2. Package requires api private and the domain link. Those can be found in your mailgun dashboard.
+  3. Hide those infos in an `.env` file. see `.env.sample` for properties example.
+  4. Netlify automatically injects .env variable to your local dev, no need to install dotenv package.
+- Gatsby configures css modules for you if you want to use it.
+  </details>
