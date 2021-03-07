@@ -1,0 +1,20 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "gatsby": "^3.0.2",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "build": "gatsby build",
+    "dev": "gatsby develop"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
